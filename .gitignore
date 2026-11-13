@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+deepfilter-venv/
+venv/
+.venv/
+
+# Build files
+build/
+dist/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Windows / macOS
+.DS_Store
+Thumbs.db
+
+# Test audio files
+*.wav
+enhanced/
+
+# Backup files
+*_backup*.py
+
+# Old and test scripts
+main.py
+noiseshield_fixed.py
+noiseshield_messy.py
+deepfilter_test.py
+record_test.py
+
+# Downloaded installer
+deep-filter-*
+
+# Local app preferences
+noiseshield_settings.json
