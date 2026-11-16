@@ -29,7 +29,7 @@ A Windows desktop application designed to reduce background noise from your micr
 ## Requirements
 
 - Windows (developed and tested on Windows 11)
-- Python 3.12
+- Python 3.12.10
 - VB-Audio Virtual Cable
 
 ## Installation
