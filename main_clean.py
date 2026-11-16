@@ -2260,7 +2260,11 @@ devices_output_dropdown.configure(
 
 preferred_output = next(
     (device for device in available_outputs
-     if "cable input" in device.lower() or "cable in" in device.lower()),
+     if "cable input" in device.lower() 
+     and sd.query_hostapis(
+            sd.query_devices(int(device.split(":")[0]))["hostapi"]
+        )["name"] == "Windows WASAPI"
+    ),
     available_outputs[0] if available_outputs else ""
 )
 
